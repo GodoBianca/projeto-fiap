@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Plus & family= Romanesco & display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    família de fontes: 'Romanesco';
+}
+
+.container {
+    display: flex;
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cyan;
+}
+
+.content {
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(122, 62, 62);
+    width: 40%;
+    height: 100%;
+    left: 60%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.title-bemvindo {
+    color: aliceblue;
+}
+
+.title-second {
+    color: brown;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300px;
+    color: aliceblue;
+    line-height: 30px;
+}
+
+.btn {
+    font-size: 10px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: brown;
+}
+
+.btn-second {
+    background-color: brown;
+    color: #fff;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid brown;
+    color: brown;
+}
+.first-content {
+    display: flex;
+    position: relative;
+    display: none;
+}
+
+.first-column {
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+
+.second-column {
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-social-media {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 45px;
+    border: none;
+    background-color: rgba(124, 103, 103, 0.377);
+    margin: 8px;
+}
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+}
+
+.second-content .second-column {
+    order: 1;
+}
+
+.password {
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
+}
